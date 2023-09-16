@@ -1,0 +1,187 @@
+/* Fonts */
+
+.font-sansserif-400 {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.font-sansserif-600 {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.font-sansserif-800 {
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.font-georgia {
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-ptserif {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+.font-ptserif-200 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+.font-ptserif-i {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.font-lsp-xs {
+    letter-spacing: 0.05rem;
+}
+
+.font-lsp-s {
+    letter-spacing: 0.1rem;
+}
+
+.font-lsp-m {
+    letter-spacing: 0.15rem;
+}
+
+.font-lsp-l {
+    letter-spacing: 0.2rem;
+}
+
+.font-lsp-xl {
+    letter-spacing: 0.25rem;
+}
+
+.fw-100{
+    font-weight: 300;
+}
+.fw-200{
+    font-weight: 400;
+}
+.fw-300{
+    font-weight: 500;
+}
+.fw-400{
+    font-weight: 600;
+}
+.fw-500{
+    font-weight: 700;
+}
+.fw-600{
+    font-weight: 800;
+}
+
+.lh-1 {
+    line-height: 1px;
+}
+
+/* Text */
+
+.text-xxs {
+    font-size: 0.75rem;
+}
+
+.text-xs {
+    font-size: 0.88rem;
+}
+
+.text-s {
+    font-size: 1.25rem;
+}
+
+.text-ms {
+    font-size: 1.5rem;
+}
+
+.text-m {
+    font-size: 1.75rem;
+}
+
+.text-ml {
+    font-size: 2.25rem;
+}
+
+.text-l {
+    font-size: 2.5rem;
+}
+
+.text-xl {
+    font-size: 2.75rem;
+}
+
+.text-xxl {
+    font-size: 3.25rem;
+}
+
+.text-3xl {
+    font-size: 4rem;
+}
+
+.text-4xl {
+    font-size: 5.5rem;
+}
+
+/* Colors */
+
+.pmr-pale {
+    color: #ebe5f4;
+}
+
+.pmr-pale-soft {
+    color: #f0f0f8;
+}
+
+.pmr-primary {
+    color: #605dba;
+}
+
+.pmr-dark-grey {
+    color: #343f52;
+}
+
+.pmr-white-border {
+    color: #ebedf3;
+}
+
+.pmr-light {
+    color: #fcfcfd;
+}
+
+.pmr-body {
+    color: #60697b;
+}
+
+.pmr-secondary {
+    color: #aab0bc;
+}
+
+.pmr-blue {
+    color: #3f78e0;
+}
+
+.pmr-linkblue {
+    color: #0095f6;
+}
+
+.pmr-yellow {
+    color: #fcc032;
+}
+
+
+/*  Backgrounds */
+.bg-medium-yellow {
+    background-color: #FFC017;
+}
+
+/*  Border  */
+.border-bottom-dark {
+    border-bottom: 1px solid rgba(25, 25, 25, 1);
+}
+
+.border-bottom-dark-2 {
+    border-bottom: 1px solid rgba(41, 41, 41, 1);
+}
+
