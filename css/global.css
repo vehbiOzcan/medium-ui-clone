@@ -126,16 +126,8 @@
 
 /* Colors */
 
-.pmr-pale {
-    color: #ebe5f4;
-}
-
 .pmr-pale-soft {
     color: #f0f0f8;
-}
-
-.pmr-primary {
-    color: #605dba;
 }
 
 .pmr-dark-grey {
@@ -156,6 +148,10 @@
 
 .pmr-secondary {
     color: #aab0bc;
+}
+
+.pmr-light-grey {
+    color: #F2F2F2;
 }
 
 .pmr-blue {
@@ -183,5 +179,9 @@
 
 .border-bottom-dark-2 {
     border-bottom: 1px solid rgba(41, 41, 41, 1);
+}
+
+.border-bottom-light {
+    border-bottom: 1px solid #F2F2F2;
 }
 
