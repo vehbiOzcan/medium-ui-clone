@@ -4,5 +4,20 @@ a {
 }
 
 a:hover {
-    color: #212529 ;
+    color: #252525 ;
+}
+
+.article-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width:730px) {
+    .article-content {
+        display: none;
+        
+    }
 }
