@@ -173,9 +173,21 @@
 .pmr-medium-grey {
     color: #6b6b6b;
 }
+
+.pmr-medium-black {
+    color: #212529;
+}
 /*  Backgrounds */
 .bg-medium-yellow {
     background-color: #FFC017;
+}
+
+.bg-medium-black {
+    background-color: #212529;
+}
+
+.bg-medium-green {
+    background-color: #1a8917;
 }
 
 /*  Border  */
@@ -201,4 +213,11 @@
     background-color: #F2F2F2;
 }
 
+/* Aside */
 
+.aside {
+    position: sticky;
+    /* max-width: 416px;
+    min-width: 300px; */
+    top: 100px;
+}
