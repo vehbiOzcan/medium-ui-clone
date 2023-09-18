@@ -177,6 +177,12 @@
 .pmr-medium-black {
     color: #212529;
 }
+
+.pmr-medium-black-2 {
+    color: #242424;
+}
+
+
 /*  Backgrounds */
 .bg-medium-yellow {
     background-color: #FFC017;
@@ -186,11 +192,33 @@
     background-color: #212529;
 }
 
+.bg-medium-black-2 {
+    background-color: #242424;
+}
+
 .bg-medium-green {
     background-color: #1a8917;
 }
 
+.bg-medium-white {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.bg-medium-blue {
+    background-color: rgb(68, 121, 255);
+}
+
+.bg-pmr-secondary {
+    background-color: #aab0bc;
+}
+
+.bg-pmr-light-grey {
+    background-color: #F2F2F2;
+}
+
+
 /*  Border  */
+
 .border-bottom-dark {
     border-bottom: 1px solid rgba(25, 25, 25, 1);
 }
@@ -202,16 +230,10 @@
 .border-bottom-light {
     border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
-
-/* Backgrounds */
-
-.bg-pmr-secondary {
-    background-color: #aab0bc;
+.border-light {
+    border: 1px solid rgba(230, 230, 230, 1);
 }
 
-.bg-pmr-light-grey {
-    background-color: #F2F2F2;
-}
 
 /* Aside */
 
