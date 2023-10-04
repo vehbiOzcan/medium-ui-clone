@@ -208,6 +208,10 @@
     background-color: rgb(68, 121, 255);
 }
 
+.bg-medium-light-blue {
+    background-color: #bcdfff;
+}
+
 .bg-pmr-secondary {
     background-color: #aab0bc;
 }
@@ -232,6 +236,14 @@
 }
 .border-light {
     border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.border-left-light {
+    border-left: 1px solid rgba(230, 230, 230, 1);
+}
+
+.border-right-light {
+    border-right: 1px solid rgba(230, 230, 230, 1);
 }
 
 

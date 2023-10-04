@@ -1,65 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medium Membership</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Medium Membership</title>
 </head>
+
 <body>
-    <header id="nav">
-        <div>
-          <div id="nav-bar" class="bg-medium-yellow border-bottom-dark-2 w-100 fixed-top">
-            <div class="container py-2">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="assets/logo.png" style="width: 162px; height: 25px;">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse"  id="navbarNav">
-                    <ul class="navbar-nav ms-auto ">
-                      <li class="nav-item">
-                        <a class="nav-link text-dark text-xs fw-300" aria-current="page" href="pages/about.html">Our Story</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark text-xs fw-300" href="#">Membership</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark text-xs fw-300" href="#">Write</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark text-xs fw-300" href="#">Sign In</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="str-btn" class="nav-link btn rounded-pill px-4 fs- text-light ms-3 bg-medium-black"
-                          href="#">Get started</a>
-                      </li>
-                    </ul>
-                  </div>
+  <header id="nav">
+    <div>
+      <div id="nav-bar" class="bg-medium-blue border-bottom-light w-100 fixed-top">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid py-2">
+              <a class="navbar-brand " href="#" >
+                <svg id="nav-brand" viewBox="0 0 3940 610" width="145" style="fill: white;" >
+                  <path
+                    d="M594.79 308.2c0 163.76-131.85 296.52-294.5 296.52S5.8 472 5.8 308.2 137.65 11.69 300.29 11.69s294.5 132.75 294.5 296.51M917.86 308.2c0 154.16-65.93 279.12-147.25 279.12s-147.25-125-147.25-279.12S689.29 29.08 770.61 29.08s147.25 125 147.25 279.12M1050 308.2c0 138.12-23.19 250.08-51.79 250.08s-51.79-112-51.79-250.08 23.19-250.08 51.8-250.08S1050 170.09 1050 308.2M1862.77 37.4l.82-.18v-6.35h-167.48l-155.51 365.5-155.51-365.5h-180.48v6.35l.81.18c30.57 6.9 46.09 17.19 46.09 54.3v434.45c0 37.11-15.58 47.4-46.15 54.3l-.81.18V587H1327v-6.35l-.81-.18c-30.57-6.9-46.09-17.19-46.09-54.3V116.9L1479.87 587h11.33l205.59-483.21V536.9c-2.62 29.31-18 38.36-45.68 44.61l-.82.19v6.3h213.3v-6.3l-.82-.19c-27.71-6.25-43.46-15.3-46.08-44.61l-.14-445.2h.14c0-37.11 15.52-47.4 46.08-54.3m97.43 287.8c3.49-78.06 31.52-134.4 78.56-135.37 14.51.24 26.68 5 36.14 14.16 20.1 19.51 29.55 60.28 28.09 121.21zm-2.11 22h250v-1.05c-.71-59.69-18-106.12-51.34-138-28.82-27.55-71.49-42.71-116.31-42.71h-1c-23.26 0-51.79 5.64-72.09 15.86-23.11 10.7-43.49 26.7-60.45 47.7-27.3 33.83-43.84 79.55-47.86 130.93-.13 1.54-.24 3.08-.35 4.62s-.18 2.92-.25 4.39a332.64 332.64 0 0 0-.36 21.69C1860.79 507 1923.65 600 2035.3 600c98 0 155.07-71.64 169.3-167.8l-7.19-2.53c-25 51.68-69.9 83-121 79.18-69.76-5.22-123.2-75.95-118.35-161.63m532.69 157.68c-8.2 19.45-25.31 30.15-48.24 30.15s-43.89-15.74-58.78-44.34c-16-30.7-24.42-74.1-24.42-125.51 0-107 33.28-176.21 84.79-176.21 21.57 0 38.55 10.7 46.65 29.37zm165.84 76.28c-30.57-7.23-46.09-18-46.09-57V5.28L2424.77 60v6.7l1.14-.09c25.62-2.07 43 1.47 53.09 10.79 7.9 7.3 11.75 18.5 11.75 34.26v71.14c-18.31-11.69-40.09-17.38-66.52-17.38-53.6 0-102.59 22.57-137.92 63.56-36.83 42.72-56.3 101.1-56.3 168.81C2230 518.72 2289.53 600 2378.13 600c51.83 0 93.53-28.4 112.62-76.3V588h166.65v-6.66zm159.29-505.33c0-37.76-28.47-66.24-66.24-66.24-37.59 0-67 29.1-67 66.24s29.44 66.24 67 66.24c37.77 0 66.24-28.48 66.24-66.24m43.84 505.33c-30.57-7.23-46.09-18-46.09-57h-.13V166.65l-166.66 47.85v6.5l1 .09c36.06 3.21 45.93 15.63 45.93 57.77V588h166.8v-6.66zm427.05 0c-30.57-7.23-46.09-18-46.09-57V166.65L3082 212.92v6.52l.94.1c29.48 3.1 38 16.23 38 58.56v226c-9.83 19.45-28.27 31-50.61 31.78-36.23 0-56.18-24.47-56.18-68.9V166.66l-166.66 47.85V221l1 .09c36.06 3.2 45.94 15.62 45.94 57.77v191.27a214.48 214.48 0 0 0 3.47 39.82l3 13.05c14.11 50.56 51.08 77 109 77 49.06 0 92.06-30.37 111-77.89v66h166.66v-6.66zM3934.2 588v-6.67l-.81-.19c-33.17-7.65-46.09-22.07-46.09-51.43v-243.2c0-75.83-42.59-121.09-113.93-121.09-52 0-95.85 30.05-112.73 76.86-13.41-49.6-52-76.86-109.06-76.86-50.12 0-89.4 26.45-106.25 71.13v-69.87l-166.66 45.89v6.54l1 .09c35.63 3.16 45.93 15.94 45.93 57V588h155.5v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66V255.72c7-16.35 21.11-35.72 49-35.72 34.64 0 52.2 24 52.2 71.28V588h155.54v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66v-248a160.45 160.45 0 0 0-2.2-27.68c7.42-17.77 22.34-38.8 51.37-38.8 35.13 0 52.2 23.31 52.2 71.28V588z">
+                  </path>
+                </svg>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-xs fw-300" aria-current="page" href="../pages/about.html">Our
+                      Story</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-xs fw-300" href="#">Membership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-xs fw-300" href="#">Write</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-xs fw-300" href="#">Sign In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="str-btn" class="nav-link btn rounded-pill px-4 fs- text-light ms-3 bg-medium-black"
+                      href="#">Get unlimited access</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="nav-content">
+      <div class="bg-medium-blue border-bottom-light mt-5">
+        <div class="container">
+          <div class="row justify-content-center py-5">
+            <div class="col-12 col-lg-8 py-5 text-white text-center">
+              <h1 class="text-4xl font-georgia mb-4">Fuel great thinking.</h1>
+              <p class="text-s fw-200 lh-1 mb-5">Become a Medium member to enjoy unlimited access and <br> directly
+                support the writers you read most.</p>
+              <a href="" class="btn fw-300 bg-medium-white rounded-pill px-5 fs-5 ">Get unlimited access</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-medium-blue">
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-6">
+              <div>
+                <div class="text-white py-3 pe-4">
+                  <h3 class="display-6 fw-200 mb-3">Get unlimited access to every story.</h3>
+                  <img src="../assets/svg/medium_1.svg" alt="" class="img-fluid mb-3" width="256px" height="156px">
+                  <p>Read any article in our entire library across all your devices — with no paywalls, story limits or
+                    ads.</p>
                 </div>
-              </nav>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="">
+                <div class="text-white border-left-light py-3 ps-4">
+                  <h3 class="display-6 fw-200 mb-3">Support the voices you want to hear more from.</h3>
+                  <img src="../assets/svg/medium_2.svg" alt="" class="img-fluid mb-3" width="256px" height="156px">
+                  <p>A portion of your membership will directly support the writers and thinkers you read the most.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="border-bottom-dark-2">
+    <div class="container-fluid">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-7 py-5">
+          <h3 class="display-4 fw-200 font-georgia mb-5">Why I'm a Medium Member...</h3>
+          <div class="row">
+            <div class="col-12 col-lg-4 text-center">
+              <img src="../assets/membership.png" alt="" width="200px" height="200px" class="rounded-circle">
+            </div>
+            <div class="col-12 col-lg-8 ps-4">
+              <p class="text-s font-sansserif-400">"I love Medium’s membership — it gives me access to the stories I
+                love by the writers I love, and it allows me to help support those writers financially."</p>
+              <p class="text-ms font-ptserif">Katie Molina</p>
+              <button class="bg-transparent border-0">
+                <img src="../assets/svg/arrow-left.svg" alt="">
+              </button>
+              <button class="ms-4 bg-transparent border-0">
+                <img src="../assets/svg/arrow-right.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-medium-light-blue border-bottom-dark-2"
+    style="background-image: url(../assets/svg/membership_footer.svg); background-repeat: no-repeat; background-position: bottom;">
+    <div class="container-fluid">
+      <div class="row justify-content-center py-5">
+        <div class="col-12 col-lg-7 ">
+          <h1 class="display-1 fw-400 font-georgia text-center">Take your mind <br>
+            in new directions.</h1>
+          <div class="text-center mt-5 mb-5">
+            <a href="#" class="btn rounded-pill bg-dark text-white text-ms mb-5">Get unlimited access</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <div class="d-flex flex-column flex-md-row py-4 align-items-center justify-content-between px-5">
+
+      <a href="../index.html" class="mb-2 mb-0">
+        <svg viewBox="0 0 3940 610" class="cn av" style="width: 150px;">
+          <path
+            d="M594.79 308.2c0 163.76-131.85 296.52-294.5 296.52S5.8 472 5.8 308.2 137.65 11.69 300.29 11.69s294.5 132.75 294.5 296.51M917.86 308.2c0 154.16-65.93 279.12-147.25 279.12s-147.25-125-147.25-279.12S689.29 29.08 770.61 29.08s147.25 125 147.25 279.12M1050 308.2c0 138.12-23.19 250.08-51.79 250.08s-51.79-112-51.79-250.08 23.19-250.08 51.8-250.08S1050 170.09 1050 308.2M1862.77 37.4l.82-.18v-6.35h-167.48l-155.51 365.5-155.51-365.5h-180.48v6.35l.81.18c30.57 6.9 46.09 17.19 46.09 54.3v434.45c0 37.11-15.58 47.4-46.15 54.3l-.81.18V587H1327v-6.35l-.81-.18c-30.57-6.9-46.09-17.19-46.09-54.3V116.9L1479.87 587h11.33l205.59-483.21V536.9c-2.62 29.31-18 38.36-45.68 44.61l-.82.19v6.3h213.3v-6.3l-.82-.19c-27.71-6.25-43.46-15.3-46.08-44.61l-.14-445.2h.14c0-37.11 15.52-47.4 46.08-54.3m97.43 287.8c3.49-78.06 31.52-134.4 78.56-135.37 14.51.24 26.68 5 36.14 14.16 20.1 19.51 29.55 60.28 28.09 121.21zm-2.11 22h250v-1.05c-.71-59.69-18-106.12-51.34-138-28.82-27.55-71.49-42.71-116.31-42.71h-1c-23.26 0-51.79 5.64-72.09 15.86-23.11 10.7-43.49 26.7-60.45 47.7-27.3 33.83-43.84 79.55-47.86 130.93-.13 1.54-.24 3.08-.35 4.62s-.18 2.92-.25 4.39a332.64 332.64 0 0 0-.36 21.69C1860.79 507 1923.65 600 2035.3 600c98 0 155.07-71.64 169.3-167.8l-7.19-2.53c-25 51.68-69.9 83-121 79.18-69.76-5.22-123.2-75.95-118.35-161.63m532.69 157.68c-8.2 19.45-25.31 30.15-48.24 30.15s-43.89-15.74-58.78-44.34c-16-30.7-24.42-74.1-24.42-125.51 0-107 33.28-176.21 84.79-176.21 21.57 0 38.55 10.7 46.65 29.37zm165.84 76.28c-30.57-7.23-46.09-18-46.09-57V5.28L2424.77 60v6.7l1.14-.09c25.62-2.07 43 1.47 53.09 10.79 7.9 7.3 11.75 18.5 11.75 34.26v71.14c-18.31-11.69-40.09-17.38-66.52-17.38-53.6 0-102.59 22.57-137.92 63.56-36.83 42.72-56.3 101.1-56.3 168.81C2230 518.72 2289.53 600 2378.13 600c51.83 0 93.53-28.4 112.62-76.3V588h166.65v-6.66zm159.29-505.33c0-37.76-28.47-66.24-66.24-66.24-37.59 0-67 29.1-67 66.24s29.44 66.24 67 66.24c37.77 0 66.24-28.48 66.24-66.24m43.84 505.33c-30.57-7.23-46.09-18-46.09-57h-.13V166.65l-166.66 47.85v6.5l1 .09c36.06 3.21 45.93 15.63 45.93 57.77V588h166.8v-6.66zm427.05 0c-30.57-7.23-46.09-18-46.09-57V166.65L3082 212.92v6.52l.94.1c29.48 3.1 38 16.23 38 58.56v226c-9.83 19.45-28.27 31-50.61 31.78-36.23 0-56.18-24.47-56.18-68.9V166.66l-166.66 47.85V221l1 .09c36.06 3.2 45.94 15.62 45.94 57.77v191.27a214.48 214.48 0 0 0 3.47 39.82l3 13.05c14.11 50.56 51.08 77 109 77 49.06 0 92.06-30.37 111-77.89v66h166.66v-6.66zM3934.2 588v-6.67l-.81-.19c-33.17-7.65-46.09-22.07-46.09-51.43v-243.2c0-75.83-42.59-121.09-113.93-121.09-52 0-95.85 30.05-112.73 76.86-13.41-49.6-52-76.86-109.06-76.86-50.12 0-89.4 26.45-106.25 71.13v-69.87l-166.66 45.89v6.54l1 .09c35.63 3.16 45.93 15.94 45.93 57V588h155.5v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66V255.72c7-16.35 21.11-35.72 49-35.72 34.64 0 52.2 24 52.2 71.28V588h155.54v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66v-248a160.45 160.45 0 0 0-2.2-27.68c7.42-17.77 22.34-38.8 51.37-38.8 35.13 0 52.2 23.31 52.2 71.28V588z">
+          </path>
+        </svg>
+      </a>
+
+      <p class="text-s">Every idea needs a Medium</p>
+
+      <div>
+        <ul class="d-flex list-unstyled text-xxs">
+          <li class="px-2"><a href="" class="text-decoration-underline">Lorem.</a></li>
+          <li class="px-2"><a href="" class="text-decoration-underline">Optio.</a></li>
+          <li class="px-2"><a href="" class="text-decoration-underline">Officiis?</a></li>
+          <li class="px-2"><a href="" class="text-decoration-underline">Ipsa.</a></li>
+          <li class="px-2"><a href="" class="text-decoration-underline">Labore.</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const navBar = document.getElementById("nav-bar");
+    const navBarN = document.querySelectorAll("#navbarNav ul li a");
+    const navContent = document.getElementById("nav-content");
+    const navBrand = document.getElementById("nav-brand");
+
+    let change = 0;
+    let changeside = 0;
+    let contentHeight = navContent.offsetHeight * -1;
     
-        <div id="nav-content" class="bg-medium-yellow border-bottom-dark-2 mt-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-6  py-5">
-                <h1 class="text-4xl font-georgia mb-4">Stay curious.</h1>
-                <p class="text-ms fw-200 lh-1 mb-5">Discover stories, thinking, and expertise <br> from writers on any
-                  topic.</p>
-                <a href="" class="btn btn-dark rounded-pill px-5 fs-5 ">Start reading</a>
-              </div>
-              <div class="col-12 col-lg-6 d-none d-lg-block mt-3">
-                <img src="assets/medium_home.png" class="img-fluid float-end" style="max-width: 500px; ">
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+    navBar.style.transition = "all 0.3s"
+    window.addEventListener('scroll', function () {
+      let ntop = navContent.getBoundingClientRect().top;
+
+      if (ntop <= contentHeight && change == 0) {
+
+        navBar.classList.remove("bg-medium-yellow");
+        navBar.classList.add("bg-white");
+        navBrand.style.fill = "black"
+        navBarN.forEach((item)=>item.classList.replace("text-white","text-black"))
+        change = 1
+
+      }
+      if (ntop > contentHeight && change == 1) {
+
+        navBar.classList.add("bg-medium-yellow");
+        navBar.classList.remove("bg-white");
+        navBrand.style.fill = "white"
+        navBarN.forEach((item)=>item.classList.replace("text-black","text-white"))
+        change = 0;
+      }
+    })
+
+  </script>
 </body>
+
 </html>

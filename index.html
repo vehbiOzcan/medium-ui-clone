@@ -42,7 +42,7 @@
                     <a class="nav-link text-dark text-xs fw-300" aria-current="page" href="pages/about.html">Our Story</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark text-xs fw-300" href="#">Membership</a>
+                    <a class="nav-link text-dark text-xs fw-300" href="pages/membership.html">Membership</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-dark text-xs fw-300" href="#">Write</a>
@@ -788,7 +788,7 @@
       let ntop = navContent.getBoundingClientRect().top;
      
       if(ntop <= -400 && change == 0) {
-        console.log("g")
+      
         navBar.classList.remove("bg-medium-yellow");
         navBar.classList.add( "bg-white");
         navBtn.classList.replace("bg-medium-black","bg-medium-green")
@@ -796,7 +796,7 @@
 
       }
       if(ntop > -400 && change == 1) {
-        console.log("ç")
+       
         navBar.classList.add("bg-medium-yellow");
         navBar.classList.remove("bg-white");
         navBtn.classList.replace("bg-medium-green","bg-medium-black")
