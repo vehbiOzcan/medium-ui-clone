@@ -200,6 +200,10 @@
     background-color: #1a8917;
 }
 
+.bg-medium-light-green {
+    background-color: #34aa45;
+}
+
 .bg-medium-white {
     background-color: rgba(230, 230, 230, 1);
 }
@@ -222,6 +226,9 @@
 
 
 /*  Border  */
+.border-dark {
+    border: 1px solid rgba(25, 25, 25, 1);
+}
 
 .border-bottom-dark {
     border-bottom: 1px solid rgba(25, 25, 25, 1);
@@ -233,6 +240,10 @@
 
 .border-bottom-light {
     border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+.border-bottom-white {
+    border-bottom: 1px solid rgb(242, 242, 242);
 }
 .border-light {
     border: 1px solid rgba(230, 230, 230, 1);
